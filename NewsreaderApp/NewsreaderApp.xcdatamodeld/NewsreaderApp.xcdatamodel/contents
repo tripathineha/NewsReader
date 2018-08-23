@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
+        <attribute name="comment" attributeType="String" syncable="YES"/>
+        <attribute name="commentedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="commentedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="commented" inverseEntity="User" syncable="YES"/>
+        <relationship name="commentOn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Like" inverseName="comments" inverseEntity="Like" syncable="YES"/>
+    </entity>
+    <entity name="Like" representedClassName="Like" syncable="YES">
+        <attribute name="like" optional="YES" attributeType="Integer 16" minValueString="0" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="newsLink" attributeType="String" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="commentOn" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="likes" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="emailId" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="password" attributeType="String" syncable="YES"/>
+        <relationship name="commented" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="commentedBy" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="likes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Like" inverseName="likedBy" inverseEntity="Like" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Comment" positionX="108" positionY="-252" width="128" height="103"/>
+        <element name="Like" positionX="189" positionY="-84" width="128" height="103"/>
+        <element name="User" positionX="-63" positionY="-27" width="128" height="120"/>
+    </elements>
+</model>

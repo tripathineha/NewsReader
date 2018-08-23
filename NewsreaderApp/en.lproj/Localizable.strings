@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  NewsreaderApp
+
+  Created by Globallogic on 31/01/18.
+  Copyright © 2018 Globallogic. All rights reserved.
+*/
+
+/* title for alert */
+"error" = "Error";
+/* message for alert */
+"invalid_data_received" = "Invalid Data received!";
+/* title for alert */
+"invalid_inputs" = "Invalid Inputs";
+/* message for alert */
+"fields_empty" = "Some fields are empty!";
+/* message for alert */
+"username_password_wrong" = "Either Username or Password is wrong!";
+/* title for alert */
+"password" = "Password";
+/* message for alert */
+"passwords_dont_match" = "Passwords do not match!";
+/* title for alert */
+"email" = "Email Id";
+/* message for alert */
+"email_invalid" = "Email id is not valid!";
+/* message for alert */
+"password_invalid" = "Password not valid!";
+/* title for alert */
+"alert" = "Alert";
+/* message for alert */
+"email_already_present" = "Email id is already present in the database!";
+/* message for alert */
+"invalid_indexpath" = "Unexpected indexPath";
+/* message for alert */
+"source_not_found" = "Source not found!";
+/* message for console */
+"default" = "Default";
+/* message for alert */
+"cell_not_initialised" = "Cell cannot be initialised!";
+/* title for alert */
+"comment" = "Comment";
+/* message for alert */
+"comment_empty" = "Comment field is empty!";
+/* message for alert */
+"link_couldnt_be_loaded" = "Link could not be loaded!";
+/* Label */
+"likes" = " likes";
+/* Button */
+"unlike" = "Unlike";
+/* Button */
+"like" = "Like";
+/* Label */
+"unknown" = "Unknown";
+/* Label */
+"logout" = "Logout";
+
+"improper_url" = "Improper URLRequest";
